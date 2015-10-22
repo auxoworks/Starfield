@@ -93,12 +93,16 @@ class OddballParticle implements Particle //uses an interface
 
 	public void show(){
 	fill(255);
-	ellipse(oX-45,oY+28,20,20);
+	ellipse(oX-55,oY+20,10,10);
 	}
 	public void move(){
 	oagl++;
 	oX=oX+((float)Math.cos(oagl)*ospd)+((float)Math.cos(oagl)*ospd);
 	oY=oY+((float)Math.sin(oagl)*ospd)+((float)Math.cos(oagl)*ospd);
+	if(oX>400){
+		oX=0;
+		oY=0;
+	}
 	}
 	//your code here
 }
