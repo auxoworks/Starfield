@@ -109,7 +109,7 @@ class OddballParticle implements Particle //uses an interface
 class JumboParticle extends NormalParticle//uses inheritance
 {
 	public void show(){
-	fill(255,255,0,globclr);
+	fill((float)Math.random()*255,(float)Math.random()*255,(float)Math.random()*255,globclr);
 	ellipse(200,200,globsiz,globsiz);
 	}
 	public void move(){
